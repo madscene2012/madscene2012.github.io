@@ -25,12 +25,23 @@ const nextBtn = document.getElementById("nextBtn");
 
 let currentIndex = 0;
 let isAnimating = false;
+let counterRevealTimer;
+
+function revealCounter() {
+  window.clearTimeout(counterRevealTimer);
+  counter.classList.remove("is-visible");
+  counterRevealTimer = window.setTimeout(() => {
+    counter.classList.add("is-visible");
+  }, 260);
+}
 
 function renderSection() {
   const current = sections[currentIndex];
   counter.textContent = current.title;
+  counter.dataset.section = current.title.toLowerCase();
   heroImage.src = current.image;
   heroImage.alt = `${current.title} Tape Box`;
+  revealCounter();
 }
 
 function goToDetailPage() {
