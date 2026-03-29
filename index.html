@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="landing-body">
+    <main class="landing" aria-label="Main Section Slider">
+      <header class="top-bar">
+        <p class="brand">MADSCENE</p>
+      </header>
+
+      <button class="nav-arrow left" id="prevBtn" aria-label="이전 섹션">
+        &#10094;
+      </button>
+
+      <section class="hero" id="hero" aria-live="polite">
+        <button class="tape-card" id="detailLinkBtn" aria-label="섹션 상세 페이지로 이동">
+          <img id="heroImage" src="./Huhh.png" alt="Tape Box" />
+        </button>
+        <p class="counter" id="counter">Information</p>
+      </section>
+
+      <button class="nav-arrow right" id="nextBtn" aria-label="다음 섹션">
+        &#10095;
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
