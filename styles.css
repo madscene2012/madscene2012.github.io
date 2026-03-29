@@ -242,6 +242,10 @@ body {
     row-gap: 14px;
   }
 
+  .tape-card {
+    width: min(78vw, 560px);
+  }
+
   .counter {
     font-size: 1.15rem;
   }
@@ -250,6 +254,12 @@ body {
     width: 36px;
     height: 36px;
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tape-card {
+    width: min(72vw, 360px);
   }
 }
 
