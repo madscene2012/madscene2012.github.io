@@ -243,7 +243,7 @@ body {
   }
 
   .tape-card {
-    width: min(78vw, 560px);
+    width: min(72vw, 520px);
   }
 
   .counter {
@@ -259,7 +259,7 @@ body {
 
 @media (max-width: 600px) {
   .tape-card {
-    width: min(72vw, 360px);
+    width: min(66vw, 320px);
   }
 }
 
