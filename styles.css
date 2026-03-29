@@ -429,6 +429,40 @@ body {
   width: min(92vw, 980px);
 }
 
+.contact-copy {
+  margin-top: 22px;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  text-align: center;
+  color: #f1f1f4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.contact-copy p {
+  margin: 0;
+}
+
+.contact-email-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-email-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 781px) {
+  .contact-copy {
+    margin-top: 10px;
+    margin-bottom: 6em;
+  }
+}
+
 .mail-link {
   display: inline-block;
   text-decoration: none;
