@@ -346,6 +346,90 @@ body {
   filter: brightness(1.02);
 }
 
+.portfolio-viewer {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+  z-index: 40;
+}
+
+.portfolio-viewer.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.portfolio-viewer__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 9, 13, 0.84);
+  backdrop-filter: blur(10px);
+}
+
+.portfolio-viewer__panel {
+  position: relative;
+  width: min(1120px, 100%);
+  max-height: min(92vh, 980px);
+  padding: 28px 28px 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(26, 25, 33, 0.96);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.52);
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+  transform: translateY(16px) scale(0.98);
+  transition: transform 220ms ease;
+  z-index: 1;
+}
+
+.portfolio-viewer.is-open .portfolio-viewer__panel {
+  transform: translateY(0) scale(1);
+}
+
+.portfolio-viewer__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.portfolio-viewer__title {
+  margin: 0;
+  padding-right: 40px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-viewer__media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+
+.portfolio-viewer__media iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .i1 {
   transform: translateX(18px) rotate(-1.4deg);
 }
@@ -408,6 +492,19 @@ body {
   .i8,
   .i9 {
     transform: none;
+  }
+
+  .portfolio-viewer {
+    padding: 16px;
+  }
+
+  .portfolio-viewer__panel {
+    padding: 20px 16px 18px;
+    border-radius: 18px;
+  }
+
+  .portfolio-viewer__media {
+    aspect-ratio: 16 / 10;
   }
 }
 

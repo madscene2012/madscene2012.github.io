@@ -29,26 +29,55 @@
         <a class="stack-item i3" href="https://www.youtube.com/watch?v=uGJoFdgE6ts&list=RDuGJoFdgE6ts&start_radio=1" target="_blank" rel="noopener noreferrer">
           <img src="./P03.png" alt="Portfolio Tape 03" />
         </a>
-        <a class="stack-item i4" href="https://www.youtube.com/watch?v=5cJEZ-pC-RQ&list=RD5cJEZ-pC-RQ&start_radio=1" target="_blank" rel="noopener noreferrer">
-          <img src="./P01.png" alt="Portfolio Tape 04" />
+        <a class="stack-item i4" href="https://youtu.be/J-gE6-I_a1E?list=RDJ-gE6-I_a1E" target="_blank" rel="noopener noreferrer">
+          <img src="./P04.png" alt="Portfolio Tape 04" />
         </a>
-        <a class="stack-item i5" href="https://www.youtube.com/watch?v=rkrXoMNiM5M&list=RDrkrXoMNiM5M&start_radio=1" target="_blank" rel="noopener noreferrer">
-          <img src="./P02.png" alt="Portfolio Tape 05" />
+        <a class="stack-item i5" href="https://www.youtube.com/watch?v=1DlXD8KIWv8&list=RD1DlXD8KIWv8&start_radio=1" target="_blank" rel="noopener noreferrer">
+          <img src="./P05.png" alt="Portfolio Tape 05" />
         </a>
-        <a class="stack-item i6" href="https://www.youtube.com/watch?v=uGJoFdgE6ts&list=RDuGJoFdgE6ts&start_radio=1" target="_blank" rel="noopener noreferrer">
-          <img src="./P03.png" alt="Portfolio Tape 06" />
+        <a class="stack-item i6" href="https://www.youtube.com/watch?v=HKsLk6W8RHc&list=RDHKsLk6W8RHc&start_radio=1" target="_blank" rel="noopener noreferrer">
+          <img src="./P06.png" alt="Portfolio Tape 06" />
         </a>
-        <a class="stack-item i7" href="https://www.youtube.com/watch?v=5cJEZ-pC-RQ&list=RD5cJEZ-pC-RQ&start_radio=1" target="_blank" rel="noopener noreferrer">
-          <img src="./P01.png" alt="Portfolio Tape 07" />
+        <a class="stack-item i7" href="https://www.youtube.com/watch?v=qlgYECNZID0&list=RDqlgYECNZID0&start_radio=1" target="_blank" rel="noopener noreferrer">
+          <img src="./P07.png" alt="Portfolio Tape 07" />
         </a>
-        <a class="stack-item i8" href="https://www.youtube.com/watch?v=rkrXoMNiM5M&list=RDrkrXoMNiM5M&start_radio=1" target="_blank" rel="noopener noreferrer">
-          <img src="./P02.png" alt="Portfolio Tape 08" />
-        </a>
-        <a class="stack-item i9" href="https://www.youtube.com/watch?v=uGJoFdgE6ts&list=RDuGJoFdgE6ts&start_radio=1" target="_blank" rel="noopener noreferrer">
-          <img src="./P03.png" alt="Portfolio Tape 09" />
+        <a class="stack-item i8" href="https://www.youtube.com/watch?v=OhPuD4pwGKA&list=RDOhPuD4pwGKA&start_radio=1" target="_blank" rel="noopener noreferrer">
+          <img src="./P08.png" alt="Portfolio Tape 08" />
         </a>
       </section>
-
     </main>
+
+    <div
+      class="portfolio-viewer"
+      id="portfolioViewer"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="portfolioViewerTitle"
+    >
+      <div class="portfolio-viewer__backdrop" id="portfolioViewerBackdrop"></div>
+      <div class="portfolio-viewer__panel">
+        <button
+          class="portfolio-viewer__close"
+          id="portfolioViewerClose"
+          aria-label="영상 닫기"
+        >
+          &times;
+        </button>
+        <p class="portfolio-viewer__title" id="portfolioViewerTitle">Portfolio Tape</p>
+        <div class="portfolio-viewer__media">
+          <iframe
+            id="portfolioViewerFrame"
+            src=""
+            title="포트폴리오 영상 플레이어"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="portfolio.js"></script>
   </body>
 </html>
