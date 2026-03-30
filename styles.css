@@ -476,42 +476,43 @@ body {
 @media (max-width: 780px) {
   .portfolio-page {
     padding-top: 20px;
+    overflow-x: hidden;
   }
 
   .stack-item {
-    width: min(95vw, 640px);
+    width: min(88vw, 640px);
   }
 
   .i1 {
-    transform: translateX(8px) rotate(-0.8deg);
+    transform: translateX(14px) rotate(-1.4deg);
   }
 
   .i2 {
-    transform: translateX(-6px) rotate(0.7deg);
+    transform: translateX(-12px) rotate(1.2deg);
   }
 
   .i3 {
-    transform: translateX(10px) rotate(-0.6deg);
+    transform: translateX(16px) rotate(-1deg);
   }
 
   .i4 {
-    transform: translateX(-9px) rotate(0.8deg);
+    transform: translateX(-15px) rotate(1.3deg);
   }
 
   .i5 {
-    transform: translateX(7px) rotate(-0.5deg);
+    transform: translateX(11px) rotate(-0.9deg);
   }
 
   .i6 {
-    transform: translateX(-5px) rotate(0.7deg);
+    transform: translateX(-10px) rotate(1.1deg);
   }
 
   .i7 {
-    transform: translateX(9px) rotate(-0.8deg);
+    transform: translateX(15px) rotate(-1.3deg);
   }
 
   .i8 {
-    transform: translateX(-7px) rotate(0.6deg);
+    transform: translateX(-12px) rotate(1deg);
   }
 
   .portfolio-viewer {
