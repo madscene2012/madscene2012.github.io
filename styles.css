@@ -257,6 +257,23 @@ body {
   .hero {
     width: min(95vw, 740px);
     row-gap: 14px;
+    transform: translate(-14px, -22px);
+  }
+
+  .hero.slide-out-left {
+    transform: translate(-154px, -22px);
+  }
+
+  .hero.slide-out-right {
+    transform: translate(126px, -22px);
+  }
+
+  .hero.slide-in-left {
+    transform: translate(126px, -22px);
+  }
+
+  .hero.slide-in-right {
+    transform: translate(-154px, -22px);
   }
 
   .tape-card {
@@ -276,6 +293,7 @@ body {
   }
 
   .nav-arrow {
+    top: calc(50% - 22px);
     width: 36px;
     height: 36px;
     font-size: 1.25rem;
