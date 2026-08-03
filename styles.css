@@ -57,13 +57,21 @@ body {
   z-index: 10;
 }
 
-.brand {
+.brand,
+.brand:visited,
+.brand:hover,
+.brand:active {
   margin: 0;
-  color: inherit;
+  color: var(--text-main);
   font-weight: 700;
   font-size: clamp(1rem, 1.2vw, 1.85rem);
   letter-spacing: 0.01em;
   text-decoration: none;
+}
+
+.brand:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
 
 .section-label {
@@ -310,7 +318,7 @@ body {
 
 .portfolio-page {
   min-height: 100vh;
-  padding: 30px 18px 52px;
+  padding: 18px 22px 52px;
   background-color: var(--bg-main);
   background-image: linear-gradient(
       rgba(21, 20, 25, 0.72),
@@ -333,7 +341,7 @@ body {
   align-items: center;
   gap: 12px;
   margin-bottom: 28px;
-  padding: 0 22px;
+  padding: 0;
 }
 
 .portfolio-top .back-link {
@@ -495,7 +503,7 @@ body {
 
 @media (max-width: 780px) {
   .portfolio-page {
-    padding-top: 20px;
+    padding: 18px 22px 52px;
     overflow-x: hidden;
   }
 
